@@ -20,7 +20,7 @@ export default function Cta() {
             miniTitle={content.texts.cta.miniTag}
             sectionHeaderTitle={content.texts.cta.title}
             sectionHeaderSubtitle={content.texts.cta.subtitle}
-            color="dark"
+            color="light"
           />
           <Button
             aria-label={content.texts.hero.ctaButtonAriaLabel}
