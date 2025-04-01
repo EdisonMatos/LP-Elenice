@@ -3,16 +3,19 @@ import MotionDivRightToLeft from "../../animation/MotionDivRightToLeft";
 import content from "../../../content/content";
 import Button from "../../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 import "../../../styles/shapeDivs.css";
 
 export default function HeroPersonImg({ appDownloadButtons }) {
+  const navigate = useNavigate();
+
   return (
     <div
       className="w-full bg-center bg-repeat bg-cover font-mainFont bg-black desktop1:pt-[45px]"
       id="home"
       style={{
         backgroundImage: `url(${content.texts.hero.images.backgroundPerson})`,
-       
       }}
     >
       <div className="relative z-10 flex w-full bg-black bg-opacity-0 items-left">
@@ -44,9 +47,8 @@ export default function HeroPersonImg({ appDownloadButtons }) {
                   <Button
                     aria-label={content.texts.hero.ctaButtonAriaLabel}
                     label={content.texts.hero.ctaButtonText}
-                    onClick={() => navigate("/whatsapp")}
+                    // onClick={() => navigate("/whatsapp")}
                     buttonLink={content.texts.links.ctaWhatsapp}
-                    animation
                     className="w-[100%]"
                     icon={<FaWhatsapp size={24} />}
                   />
