@@ -50,7 +50,6 @@ export default function AboutModal() {
         removeTarget={true}
         animation={true}
         icon={<MoveRight />}
-        color="bg-[#E0E0E0]"
       />
       <Dialog
         className="font-secondFont"
