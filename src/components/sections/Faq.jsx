@@ -29,8 +29,8 @@ export default function Faq() {
           </MotionDivDownToUp>
           <MotionDivDownToUp>
             <Paragraphs className="text-center underline transition text-secondary hover:scale-110">
-              <a href="/whatsapp" target="_blank" rel="noopener noreferrer">
-              {/* <a href={content.texts.links.ctaWhatsapp} target="_blank"> */}
+              {/* <a href="/whatsapp" target="_blank" rel="noopener noreferrer"> */}
+              <a href={content.texts.links.ctaWhatsapp} target="_blank">
                 {" "}
                 {content.texts.faq.paragraph}
               </a>

@@ -2,9 +2,13 @@ import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 import content from "../../../content/content";
 import Button from "../../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 import "../../../styles/shapeDivs.css";
 
 export default function HeroDefault({ appDownloadButtons }) {
+  const navigate = useNavigate();
+
   return (
     <div
       className="w-full bg-center bg-repeat font-mainFont bg-gradient-to-b from-[#000000] to-bgSectionDark desktop1:hidden"
@@ -39,8 +43,8 @@ export default function HeroDefault({ appDownloadButtons }) {
                   <Button
                     aria-label={content.texts.hero.ctaButtonAriaLabel}
                     label={content.texts.hero.ctaButtonText}
-                    onClick={() => navigate("/whatsapp")}
-                    // buttonLink={content.texts.links.ctaWhatsapp}
+                    // onClick={() => navigate("/whatsapp")}
+                    buttonLink={content.texts.links.ctaWhatsapp}
                     animation
                     className="w-[100%]"
                     icon={<FaWhatsapp size={24} />}

@@ -14,7 +14,7 @@ export default function FeaturesWithIcons() {
         miniTitle={content.texts.features.miniTag}
         sectionHeaderTitle={content.texts.features.title}
         sectionHeaderSubtitle={content.texts.features.subtitle}
-        color=""
+        color="dark"
       />
       <SectionWrapper>
         <div className="flex desktop1:mt-[40px] flex-col items-center w-full tablet1:flex-row tablet1:justify-between  desktop1:gap-x-0 desktop1:px-0">

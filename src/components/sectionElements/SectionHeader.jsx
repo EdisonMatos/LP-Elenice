@@ -24,14 +24,14 @@ export default function SectionHeader({
   // Configurações baseadas na cor
   if (color === "dark") {
     miniTitleTextColor = "text-black";
-    titleColor = titleColorSet ?? "text-primary";
+    titleColor = titleColorSet ?? "text-secondary";
     subtitleColor = subtitleColorSet ?? "text-darker opacity-70";
-    if (miniTitleBgColor) miniTitleBgColor = "bg-[#E0E0E0] ";
+    if (miniTitleBgColor) miniTitleBgColor = "bg-primary";
   } else {
     miniTitleTextColor = "text-white";
     titleColor =  titleColorSet ?? "text-secondary";
     subtitleColor = subtitleColorSet ?? "text-darker text-opacity-80";
-    if (miniTitleBgColor) miniTitleBgColor = "bg-primary bg-opacity-100";
+    if (miniTitleBgColor) miniTitleBgColor = "bg-bgSectionDark bg-opacity-100";
   }
 
   // Configurações baseadas no tipo
